@@ -1,0 +1,13 @@
+"This will make easytags set the global tags file to `tags` in the project
+"root
+let g:easytags_file = './tags'
+let g:easytags_dynamic_files = 0
+"Don't search certain things in ctrlp
+set wildignore+=*/bin/*,*/.git/*,tags
+"Don't do regex search by default
+let g:ctrlp_regexp = 0
+"search by filename not full path
+let g:ctrlp_by_filename = 1
+let g:ctrlp_mruf_exclude = '.*\.git/.*'
+"Set local cache
+let g:ctrlp_cache_dir = './.ctrlpcache.local'
